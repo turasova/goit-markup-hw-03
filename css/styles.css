@@ -24,6 +24,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-top: 25.5px;
+    padding-right: 1169px;
+    padding-bottom: 25.5px;
+    padding-left: 156px;
+
 }
 .logo-header {
     color: var(--secondary-color);
@@ -31,6 +36,8 @@ body {
 
 .list {
     list-style: none;
+    display: flex;
+    gap: 24px;
 }
 .link {
     text-decoration: none;
@@ -40,7 +47,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);  
+    color: var(--secondary-color); 
+  
 }
 .link:hover,
 .link:focus {
@@ -62,7 +70,11 @@ body {
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
-    font-weight: 700;
+    width: 1440px;
+    padding-top: 188px;
+    padding-right: 472px;
+    padding-bottom: 292px;
+    padding-left: 472px;
 }
 .hero-title {
     font-size: 56px;
@@ -79,6 +91,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -98,7 +112,6 @@ body {
  } 
  .secondary-title {
     color: var(--secondary-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -126,7 +139,13 @@ body {
     letter-spacing: 0.02em;
  }
  .footer-blok {
-     background: var(--secondary-color);
+    background: var(--secondary-color);
+    width: 1440px;
+    padding-top: 100px;
+    padding-right: 1169px;
+    padding-bottom: 188px;
+    padding-left: 156px;
+     
  }
  .footer-text {
     font-size: 16px;
@@ -166,4 +185,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+  .features {
+    width: 1128px;
+    padding-top: 120px;
+    padding-right: 156px;
+    padding-bottom: 120px;
+    padding-left: 156px;
   }
