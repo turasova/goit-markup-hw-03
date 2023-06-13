@@ -14,7 +14,7 @@ body {
     font-weight: 400;
     color:var(--brand-color) ;
     background-color: var(--fon-text-color);
-    width: 1440px;
+   
   } 
 .logo {
     color: var(--logo-color);
@@ -25,11 +25,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-top: 25.5px;
-    padding-right: 1169px;
-    padding-bottom: 25.5px;
-    padding-left: 156px;
-
 }
 .logo-header {
     color: var(--secondary-color);
@@ -39,6 +34,9 @@ body {
     list-style: none;
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 1440px;
 }
 .link {
     text-decoration: none;
@@ -74,8 +72,9 @@ body {
     width: 496px;
     padding-top: 188px;
     padding-right: 472px;
-    padding-bottom: 292px;
+    padding-bottom: 188px;
     padding-left: 472px;
+    margin: 0;
 }
 .hero-title {
     font-size: 56px;
@@ -94,6 +93,9 @@ body {
     cursor: pointer;
     width: 169px;
     height: 56px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    gap: 10px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -110,6 +112,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    width: 264px;
  } 
  .secondary-title {
     color: var(--secondary-color);
@@ -122,9 +125,17 @@ body {
  .comando-fon {
     background-color: var(--text-footer-color);
     width: 1440px;
+    justify-content:center;
      }
  .comando-fon-secondary {
-    background-color: var(--fon-text-color);
+   background-color: var(--fon-text-color);
+   height: 380px;
+   margin-top: 72px;
+   margin-bottom: 120px;
+   display: block;
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+   
  }
  .comando-title {
     color: var(--secondary-color);
@@ -139,6 +150,7 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 152px;
  }
  .footer-blok {
     background: var(--secondary-color);
@@ -146,8 +158,7 @@ body {
     padding-top: 100px;
     padding-right: 1020px;
     padding-bottom: 100px;
-    padding-left: 156px;
-     
+    padding-left: 156px;  
  }
  .footer-text {
     font-size: 16px;
@@ -169,6 +180,11 @@ body {
     border: 1px solid var(--border-portfolio-color);
     color: var(--logo-color);
     cursor: pointer;
+    height: 48px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
   }
   .portfolio-button:hover,
   .portfolio-button:focus {
@@ -189,16 +205,36 @@ body {
     letter-spacing: 0.02em;
   }
   .features {
-    width: 1128px;
-    padding-top: 120px;
-    padding-right: 156px;
-    padding-bottom: 120px;
-    padding-left: 156px;
-
+    width: 1440px;
+    justify-content:center;
   }
 .project {
-    width: 1128px;
-    padding-right: 156px;
-    padding-bottom: 120px;
-    padding-left: 156px; 
+    width: 1440px;
+    justify-content:center;
+    
 }
+.container {
+    max-width: 1440px;
+    flex-wrap: wrap;
+}
+section {
+    margin-top: 120px;
+}
+.header-container {
+    border-bottom: 1px solid #E7E9FC;
+    width: 1400px;
+    height: 72px;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+  }
+ 
