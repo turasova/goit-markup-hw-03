@@ -28,6 +28,7 @@ body {
 }
 .logo-header {
     color: var(--secondary-color);
+    margin-right: 76px;
 }
 
 .list {
@@ -36,6 +37,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
+    padding-left: 0;
     }
 .link {
     text-decoration: none;
@@ -126,7 +128,6 @@ body {
     width: 264px;
     padding-top: 188px;
     margin-top: 104px;
-
 }
  .comando-fon-secondary {
    background-color: var(--fon-text-color);
@@ -212,7 +213,7 @@ body {
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-    
+    text-align: center;
     
 }
 .visually-hidden {
@@ -227,10 +228,11 @@ body {
     clip-path: inset(100%);
     margin: -1px;
   }
-  .header {
+.header {
     display: flex;
     border-bottom: 1px solid #E7E9FC;
     align-items: baseline;
+    width: 1158px;
 }
 .container {
     width: 1158px;
@@ -242,16 +244,21 @@ body {
 .features-container {
     width: 264px;
     }
-    .features {
+.features {
     margin-top: 120px;
     margin-bottom: 120px;
     }
-    .button {
+.button {
     margin-top: 96px;
     margin-right: 427px;
     margin-bottom: 72px;
     margin-left: 427px;
     align-items: center;
     }
-        
+.nav-menu {
+    display: flex;
+    align-items: baseline;
+    margin-right: 200px;
+    } 
+
     
