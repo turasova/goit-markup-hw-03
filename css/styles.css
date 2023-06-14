@@ -14,7 +14,6 @@ body {
     font-weight: 400;
     color:var(--brand-color) ;
     background-color: var(--fon-text-color);
-   
   } 
 .logo {
     color: var(--logo-color);
@@ -25,6 +24,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding-left: 156px;
 }
 .logo-header {
     color: var(--secondary-color);
@@ -34,8 +34,8 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 24px;
-    
     }
 .link {
     text-decoration: none;
@@ -91,11 +91,10 @@ body {
     height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    gap: 10px;
     margin-top: 48px;
-    margin-right: 635px;
+    margin-right: 495px;
     margin-bottom: 188px;
-    margin-left: 635px;
+    margin-left: 495px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -131,11 +130,9 @@ body {
 }
  .comando-fon-secondary {
    background-color: var(--fon-text-color);
-   height: 380px;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    border-radius: 0px 0px 4px 4px;
    margin-bottom: 120px;
-   margin-left: 24px;
    margin-top: 72px;
    
  }
@@ -156,23 +153,22 @@ body {
      }
  .footer {
     background: var(--secondary-color);
-    padding-top: 116px;
-    padding-right: 1169px;
-    margin-bottom: 16px;
-    padding-left: 156px;
-   
- }
+    padding-top: 100px;
+      }
  .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer-color);
-   
+    width: 264px;
+    margin-top: 16px;
+    padding-left: 156px;
+    padding-bottom: 100px;
  }
   .logo-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
-    
+
   }
   .portfolio-button {
     font-family: 'Roboto', sans-serif;
@@ -189,6 +185,7 @@ body {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
+    
   }
   .portfolio-button:hover,
   .portfolio-button:focus {
@@ -215,6 +212,8 @@ body {
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
+    
+    
 }
 .visually-hidden {
     position: absolute;
@@ -231,24 +230,28 @@ body {
   .header {
     display: flex;
     border-bottom: 1px solid #E7E9FC;
+    align-items: baseline;
 }
 .container {
-    width: 1440px;
+    width: 1158px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; 
+    padding-right: 15px;
+    padding-left: 15px;   
 }
 .features-container {
     width: 264px;
     }
-    .section {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
     .features {
-        margin-top: 120px;
-        margin-bottom: 120px;
+    margin-top: 120px;
+    margin-bottom: 120px;
     }
-    .comando-container {
-
+    .button {
+    margin-top: 96px;
+    margin-right: 427px;
+    margin-bottom: 72px;
+    margin-left: 427px;
+    align-items: center;
     }
-   
+        
+    
