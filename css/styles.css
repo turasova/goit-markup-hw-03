@@ -33,11 +33,10 @@ body {
 .list {
     list-style: none;
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
-    justify-content:center;
-    width: 1440px;
-}
+    gap: 24px;
+    
+    }
 .link {
     text-decoration: none;
 }
@@ -69,18 +68,15 @@ body {
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
-    width: 496px;
-    padding-top: 188px;
-    padding-right: 472px;
-    padding-bottom: 188px;
-    padding-left: 472px;
-    margin: 0;
+    
 }
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--fon-text-color);
     letter-spacing: 0.02em; 
+    padding-top: 188px;
+    margin-top: 0; 
 }
 .hero-button {
     font-family: 'Roboto', sans-serif;
@@ -96,6 +92,10 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     gap: 10px;
+    margin-top: 48px;
+    margin-right: 635px;
+    margin-bottom: 188px;
+    margin-left: 635px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -112,7 +112,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 264px;
+    
  } 
  .secondary-title {
     color: var(--secondary-color);
@@ -122,19 +122,21 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
  }
- .comando-fon {
+ .comando {
     background-color: var(--text-footer-color);
-    width: 1440px;
-    justify-content:center;
-     }
+    width: 264px;
+    padding-top: 188px;
+    margin-top: 104px;
+
+}
  .comando-fon-secondary {
    background-color: var(--fon-text-color);
    height: 380px;
-   margin-top: 72px;
-   margin-bottom: 120px;
-   display: block;
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+   border-radius: 0px 0px 4px 4px;
+   margin-bottom: 120px;
+   margin-left: 24px;
+   margin-top: 72px;
    
  }
  .comando-title {
@@ -144,31 +146,33 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
+    
  }
  .comando-text {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-bottom: 152px;
- }
- .footer-blok {
+     }
+ .footer {
     background: var(--secondary-color);
-    width: 264px;
-    padding-top: 100px;
-    padding-right: 1020px;
-    padding-bottom: 100px;
-    padding-left: 156px;  
+    padding-top: 116px;
+    padding-right: 1169px;
+    margin-bottom: 16px;
+    padding-left: 156px;
+   
  }
  .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer-color);
+   
  }
   .logo-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
+    
   }
   .portfolio-button {
     font-family: 'Roboto', sans-serif;
@@ -203,27 +207,14 @@ border-radius: 0px 0px 4px 4px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-  .features {
-    width: 1440px;
-    justify-content:center;
-  }
-.project {
-    width: 1440px;
-    justify-content:center;
-    
-}
-.container {
-    max-width: 1440px;
-    flex-wrap: wrap;
-}
-section {
-    margin-top: 120px;
-}
-.header-container {
+     }
+     
+.portfolio-card {
+    height: 420px;
+    background: #FFFFFF;
+    border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
-    width: 1400px;
-    height: 72px;
+    border-left: 1px solid #E7E9FC;
 }
 .visually-hidden {
     position: absolute;
@@ -237,4 +228,27 @@ section {
     clip-path: inset(100%);
     margin: -1px;
   }
- 
+  .header {
+    display: flex;
+    border-bottom: 1px solid #E7E9FC;
+}
+.container {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.features-container {
+    width: 264px;
+    }
+    .section {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .features {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .comando-container {
+
+    }
+   
