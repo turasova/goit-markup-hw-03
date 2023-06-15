@@ -25,6 +25,9 @@ body {
 	margin-bottom: 0;
     padding-left: 0;
   }
+  img {
+    display: block;
+  }
 .logo {
     color: var(--logo-color);
     font-family: 'Raleway', sans-serif;
@@ -36,7 +39,6 @@ body {
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 24px;
-   
 }
 .logo-header {
     color: var(--secondary-color);
@@ -67,6 +69,9 @@ body {
 }
 .contact {  
     font-style: normal;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
 }
 .link-contact {
     font-size: 16px;
@@ -86,13 +91,14 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 188px;
 }
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--fon-text-color);
-    letter-spacing: 0.02em; 
-    padding-top: 188px;
+    letter-spacing: 0.02em;
+    /* max-width: 496px; */
    }
 .hero-button {
     font-family: 'Roboto', sans-serif;
@@ -103,7 +109,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: var(--box-shadow-hero-bt-color);
     border-radius: 4px;
@@ -111,6 +117,8 @@ body {
     margin-right: 495px;
     margin-bottom: 188px;
     margin-left: 495px;
+    display: block;
+    border: none; 
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -122,6 +130,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
  .features-text {
     font-size: 16px;
@@ -137,17 +146,24 @@ body {
     text-transform: capitalize;
     margin-bottom: 72px;
     }
+ .project {
+    padding-bottom: 120px;
+ }   
  .comando {
     background-color: var(--text-footer-color);
-    width: 264px;
     padding-top: 120px;
-    margin-top: 131px;
+    padding-bottom: 120px;
 }
+ .comando-container {
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    padding-left: 16px; 
+    padding-right: 16px
+ }
  .comando-fon-secondary {
    background-color: var(--fon-text-color);
    box-shadow: var(--box-shadow-comando-card-color);
    border-radius: 0px 0px 4px 4px;  
-   margin-bottom: 120px;
  }
  .comando-title {
     color: var(--secondary-color);
@@ -168,6 +184,7 @@ body {
      }
  .footer {
     padding-top: 100px;
+    padding-bottom: 100px;
       }
  .footer-section {
     background: var(--secondary-color);
@@ -177,20 +194,20 @@ body {
     margin-left: auto;
     margin-right: auto;
      }
- .footer-text {
+.footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer-color);
     width: 264px;
-    padding-bottom: 100px;
- }
-  .logo-footer {
+    margin-top: 16px;
+     }
+.logo-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
     padding-top: 100px ;
-  }
-  .portfolio-button {
+     }
+.portfolio-button {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -200,20 +217,21 @@ body {
     border: 1px solid var(--border-portfolio-color);
     color: var(--logo-color);
     cursor: pointer;
+    border-radius: 4px;
     height: 48px;
     padding-top: 12px;
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
-    align-items: center;
-    
+    align-items: center; 
   }
   .portfolio-button:hover,
   .portfolio-button:focus {
     background: var(--active-color);
     color: var(--fon-text-color);
+    border: 1px solid transparent;
   }
-    .portfolio-title {
+.portfolio-title {
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 20px;
@@ -234,10 +252,15 @@ body {
      
 .portfolio-card {
     background: var(--fon-text-color);
-    border-right: 1px solid var(--border-portfolio-color);
-    border-bottom: 1px solid var(--border-portfolio-color);
-    border-left: 1px solid var(--border-portfolio-color);
-    margin-bottom: 48px;
+    border: 1px solid var(--border-portfolio-color);
+    border-top: none;
+    
+}
+.portfolio-project {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .visually-hidden {
     position: absolute;
@@ -270,28 +293,30 @@ body {
     padding-right: 15px;
     padding-left: 15px;   
 }
-.features-container {
+.features-menu {
     width: 264px;
+
     }
 .features {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     }
-.menu-button {
-    margin-top: 96px;
-    margin-bottom: 72px;
-    align-items: center;
-    margin-left: 427px;
-    margin-right: 427px;
-           }
 .nav-menu {
     display: flex;
     align-items: baseline;
     margin-right: 332px;
+    align-items: center;
+    gap: 40px;
     } 
-    .portfolio {
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
     padding-left: 0;
-    margin-bottom: 72px;
+    justify-content: center;
+    }
+.portfolio-menu {
+    justify-content: center;
+    margin-bottom: 72px; 
     }
 
     
