@@ -6,7 +6,8 @@
 --secondary-color:#2E2F42;
 --text-footer-color:#F4F4FD;
 --border-portfolio-color:#E7E9FC;
-
+--box-shadow-hero-bt-color:0px 4px 4px rgba(0, 0, 0, 0.15);
+--box-shadow-comando-card-color: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,6 +16,15 @@ body {
     color:var(--brand-color) ;
     background-color: var(--fon-text-color);
   } 
+  h1,h2,h3,p {
+    margin-top: 0;
+	margin-bottom: 0;
+  }
+  ul {
+    margin-top: 0;
+	margin-bottom: 0;
+    padding-left: 0;
+  }
 .logo {
     color: var(--logo-color);
     font-family: 'Raleway', sans-serif;
@@ -24,7 +34,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-left: 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+   
 }
 .logo-header {
     color: var(--secondary-color);
@@ -37,7 +49,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
-    padding-left: 0;
     }
 .link {
     text-decoration: none;
@@ -67,10 +78,14 @@ body {
 .link-contact:focus {
     color: var(--active-color); 
 }
-.hero {
+.hero-section {
     background-color: var(--secondary-color);
     text-align: center;
-    
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     font-size: 56px;
@@ -78,8 +93,7 @@ body {
     color: var(--fon-text-color);
     letter-spacing: 0.02em; 
     padding-top: 188px;
-    margin-top: 0; 
-}
+   }
 .hero-button {
     font-family: 'Roboto', sans-serif;
     background: var(--logo-color);
@@ -91,7 +105,7 @@ body {
     cursor: pointer;
     width: 169px;
     height: 56px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow-hero-bt-color);
     border-radius: 4px;
     margin-top: 48px;
     margin-right: 495px;
@@ -113,8 +127,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
- } 
+ }
  .secondary-title {
     color: var(--secondary-color);
     font-size: 36px;
@@ -122,20 +135,19 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
- }
+    margin-bottom: 72px;
+    }
  .comando {
     background-color: var(--text-footer-color);
     width: 264px;
-    padding-top: 188px;
-    margin-top: 104px;
+    padding-top: 120px;
+    margin-top: 131px;
 }
  .comando-fon-secondary {
    background-color: var(--fon-text-color);
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-   border-radius: 0px 0px 4px 4px;
+   box-shadow: var(--box-shadow-comando-card-color);
+   border-radius: 0px 0px 4px 4px;  
    margin-bottom: 120px;
-   margin-top: 72px;
-   
  }
  .comando-title {
     color: var(--secondary-color);
@@ -144,31 +156,39 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    
+    padding-top: 32px;
+    margin-bottom: 8px;
  }
  .comando-text {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
      }
  .footer {
-    background: var(--secondary-color);
     padding-top: 100px;
       }
+ .footer-section {
+    background: var(--secondary-color);
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+     }
  .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer-color);
-    margin-top: 16px;
-    padding-left: 156px;
+    width: 264px;
     padding-bottom: 100px;
  }
   .logo-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
-
+    padding-top: 100px ;
   }
   .portfolio-button {
     font-family: 'Roboto', sans-serif;
@@ -185,6 +205,7 @@ body {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
+    align-items: center;
     
   }
   .portfolio-button:hover,
@@ -198,22 +219,25 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    padding-left:16px;
   }
   .portfolio-text {
     color: var(--brand-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left:16px;
+    margin-bottom: 32px;
      }
      
 .portfolio-card {
-    height: 420px;
-    background: #FFFFFF;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    text-align: center;
-    
+    background: var(--fon-text-color);
+    border-right: 1px solid var(--border-portfolio-color);
+    border-bottom: 1px solid var(--border-portfolio-color);
+    border-left: 1px solid var(--border-portfolio-color);
+    margin-bottom: 48px;
 }
 .visually-hidden {
     position: absolute;
@@ -227,11 +251,17 @@ body {
     clip-path: inset(100%);
     margin: -1px;
   }
+.header-section {
+    width: 1440px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--border-portfolio-color);  
+}
 .header {
     display: flex;
-    border-bottom: 1px solid #E7E9FC;
-    align-items: baseline;
-    width: 1158px;
+    align-items: baseline; 
+    width: 1158px;  
 }
 .container {
     width: 1158px;
@@ -247,21 +277,21 @@ body {
     margin-top: 120px;
     margin-bottom: 120px;
     }
-.button {
+.menu-button {
     margin-top: 96px;
-    margin-right: 427px;
     margin-bottom: 72px;
-    margin-left: 427px;
     align-items: center;
-    }
+    margin-left: 427px;
+    margin-right: 427px;
+           }
 .nav-menu {
     display: flex;
     align-items: baseline;
-    margin-right: 200px;
+    margin-right: 332px;
     } 
     .portfolio {
-       padding-left: 0;
-
+    padding-left: 0;
+    margin-bottom: 72px;
     }
 
     
