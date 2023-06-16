@@ -40,10 +40,7 @@ img {
     width: 1158px;  
     }
 .header-section {
-    width: 1440px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     border-bottom: 1px solid var(--border-portfolio-color);  
     }
 .logo {
@@ -55,17 +52,12 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: inline-block; 
  }
 .logo-header {
     color: var(--secondary-color); 
-      
+    margin-right: 76px;     
 }
-.logo.link {
-    margin-right: 76px;
- }
 .list {
     list-style: none;
     display: flex;
@@ -84,6 +76,7 @@ img {
     color: var(--secondary-color);    
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
 }
 .link-header-menu {
     gap: 40px;
@@ -94,8 +87,6 @@ img {
 }
 .contact {  
     font-style: normal;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
 }
 .link-contact {
@@ -111,10 +102,7 @@ img {
 .hero-section {
     background-color: var(--secondary-color);
     text-align: center;
-    width: 1440px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -184,7 +172,6 @@ img {
  }   
 .comando {
     background-color: var(--text-footer-color);
-    width: 1440px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +196,6 @@ img {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 32px;
     margin-bottom: 8px;
  }
 .comando-text {
@@ -217,11 +203,9 @@ img {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
      }
 .footer-section {
     background: var(--secondary-color);
-    width: 1440px;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -240,10 +224,8 @@ img {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
     display: inline-block;
-   
      }
 .footer-section .logo {
-  padding-bottom: 0;
   margin-bottom: 16px; 
 }
 .portfolio {
