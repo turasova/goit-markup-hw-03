@@ -55,8 +55,10 @@ img {
     display: inline-block; 
  }
 .logo-header {
-    color: var(--secondary-color); 
-    margin-right: 76px;     
+    color: var(--secondary-color);      
+}
+.link.logo{
+    margin-right: 76px;    
 }
 .list {
     list-style: none;
@@ -227,6 +229,7 @@ img {
      }
 .footer-section .logo {
   margin-bottom: 16px; 
+  margin-right: 0;
 }
 .portfolio {
     padding-top: 96px;
