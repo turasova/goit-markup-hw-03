@@ -241,7 +241,7 @@ img {
     color: var(--text-footer-color);
     display: inline-block;
      }
-.logo-footer.logo.link {
+.footer {
     margin-bottom: 16px;
 }
 .portfolio {
