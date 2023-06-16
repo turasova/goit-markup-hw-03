@@ -102,7 +102,8 @@ body {
     line-height: 1.07;
     color: var(--fon-text-color);
     letter-spacing: 0.02em;
-    /* max-width: 496px;  */
+    max-width: 496px; 
+    margin: 0 auto;
       }
 .hero-button {
     font-family: 'Roboto', sans-serif;
@@ -210,8 +211,11 @@ body {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
     display: inline-block;
-    margin-bottom: 16px;
+    
      }
+.logo-footer.logo.link {
+    margin-bottom: 16px;
+}
 .portfolio-button {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -258,8 +262,7 @@ body {
     border: 1px solid var(--border-portfolio-color);
     border-top: none;
     padding-top: 32px;
-    padding-left: 16px;
-    
+    padding-left: 16px;    
 }
 .portfolio-project {
     display: flex;
