@@ -240,9 +240,11 @@ img {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
     display: inline-block;
+   
      }
-.footer {
-    margin-bottom: 16px;
+.footer-section .logo {
+  padding-bottom: 0;
+  margin-bottom: 16px; 
 }
 .portfolio {
     padding-top: 96px;
