@@ -40,12 +40,15 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     display: inline-block; 
+    gap:40px;
 }
 .logo-header {
-    color: var(--secondary-color);    
+    color: var(--secondary-color); 
+      
 }
 .logo.link {
     margin-right: 76px;
+    gap:40px;
 }
 .list {
     list-style: none;
@@ -66,6 +69,7 @@ body {
     color: var(--secondary-color);    
     padding-top: 24px;
     padding-bottom: 24px;
+    gap:40px;
 }
 .link:hover,
 .link:focus {
@@ -82,6 +86,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color);
+    gap: 40px;
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -211,7 +216,6 @@ body {
     font-family: 'Raleway', sans-serif;
     color: var(--text-footer-color);
     display: inline-block;
-    
      }
 .logo-footer.logo.link {
     margin-bottom: 16px;
@@ -240,6 +244,14 @@ body {
     color: var(--fon-text-color);
     border: 1px solid transparent;
   }
+  .portfolio-project {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;  
+}
+.portfolio-project-menu {
+    row-gap: 48px;   
+}
 .portfolio-title {
     color: var(--secondary-color);
     font-weight: 500;
@@ -253,23 +265,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left:16px;
-    margin-bottom: 32px;
-     }
+ }
      
 .portfolio-card {
     background: var(--fon-text-color);
     border: 1px solid var(--border-portfolio-color);
     border-top: none;
-    padding-top: 32px;
-    padding-left: 16px;    
+    padding: 32px 16px;
 }
-.portfolio-project {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
